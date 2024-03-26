@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        Milk0000
       </a>
       {/* возврат на домашнюю страницу */}
       <div className={styles.menu}>
@@ -16,8 +16,8 @@ export const Navbar = () => {
           className={styles.menuBtn}
           src={
             menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
+              ? getImageUrl('nav/closeIcon.png')
+              : getImageUrl('nav/menuIcon.png')
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
