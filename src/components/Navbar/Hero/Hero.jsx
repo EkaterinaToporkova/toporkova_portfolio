@@ -14,10 +14,7 @@ export const Hero = () => {
         <a href="mailto:myemail@mail.ru">Связаться</a>
         {/* Нажавший на эту ссылку попадет на свою почту и сможет отправить мне письмо*/}
       </div>
-      <img
-        src={getImageUrl(nav / hero / heroImage.png)}
-        alt="hero image of me"
-      />
+      <img src={getImageUrl('hero / heroImage.jpg')} alt="hero image of me" />
     </section>
   );
 };
