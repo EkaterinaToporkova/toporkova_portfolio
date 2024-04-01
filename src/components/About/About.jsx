@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>Обо мне</h2>
-      <div className={styles.contetnt}>
+      <div className={styles.content}>
         <img
           src={getImageUrl('about/aboutImage.png')}
           alt="Me setting with a laptop"
@@ -24,7 +24,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
-                Я фронтенд разработчик с опыт создания адаптивных и
+                Я фронтенд разработчик с опытом создания адаптивных и
                 оптимизированнхы сайтов
               </p>
             </div>

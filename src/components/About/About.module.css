@@ -29,6 +29,7 @@
   display: flex;
   /* Свойство flex-direction определяет направление элементов в контейнере — горизонтальное или вертикальное */
   flex-direction: row;
+  /* align-items: center - элементы выстраиваются по центру поперечной оси. */
   align-items: center;
 }
 
