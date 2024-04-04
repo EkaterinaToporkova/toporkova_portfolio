@@ -1,0 +1,19 @@
+@import '../../vars.css';
+
+.container {
+  color: var(--color-dark);
+  margin-top: 120px;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px 10%;
+  gap: 10px;
+}
+
+.text h2 {
+  color: var(--color-text);
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
