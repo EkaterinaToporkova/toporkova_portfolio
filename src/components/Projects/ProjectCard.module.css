@@ -1,6 +1,70 @@
 @import '../../vars.css';
 
-.imageSrc {
-  width: 298;
-  height: 200;
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(214, 182, 177) 0%,
+    rgba(214, 182, 177, 0) 100%
+  );
+  box-shadow: 0 16px 14px 0 #9b7883;
+  /* Свойства CSS paddingиспользуются для создания пространства вокруг содержимого элемента внутри любых определенных границ */
+  /* 18px - верхние и нижние отступы */
+  /* 24px - правые и левые отступы */
+  padding: 18px 24px;
+  max-width: 345px;
+}
+
+.image {
+  margin-bottom: 26px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skill {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 2px 22px;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 500;
+  border-radius: 100px;
+  background: var(--color-secondary);
+  padding: 1px 22px;
 }

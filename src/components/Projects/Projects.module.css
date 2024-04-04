@@ -12,6 +12,7 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  color: var(--color-secondary);
 }
 
 .projects {
@@ -21,4 +22,8 @@
   /* flex-wrap определяет, будут ли flex-элементы переноситься на другую строку, если им не хватит места в ряду */
   /* wrap — элементы переносятся на новую строку */
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
 }
