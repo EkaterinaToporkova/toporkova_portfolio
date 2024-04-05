@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Milk0000
+        Portfolio
       </a>
       {/* возврат на домашнюю страницу */}
       <div className={styles.menu}>
