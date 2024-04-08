@@ -9,7 +9,7 @@
   /* padding: 73px - создания пространства вокруг содержимого элемента внутри любых определенных границ, со всех сторон 73px */
   padding: 73px;
   /* margin-top - устанавливает величину отступа от верхнего края элемента. Отступом является расстояние от внешнего края верхней границы текущего элемента до внутренней границы его родительского элемента  */
-  margin-top: 129px;
+  margin-top: 49px;
   /* z-index - определяет порядок наложения элементов в трёхмерном пространстве на веб-странице. */
   z-index: 1;
   margin-left: 10%;
@@ -17,9 +17,9 @@
 }
 
 .title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
+  color: var(--color-secondary);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
+  font-weight: 600;
   /* letter-spacing - интервал между буквами */
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -58,6 +58,7 @@
   );
   /* background-size - управляет размерами картинки внутри элемента, для которого эта картинка задана фоном.*/
   background-size: 0 100%;
+  gap: 11px;
 }
 
 /* :hover - псевдоэлемент, который срабатывает, когда пользователь наводит на элемент мышью, но не обязательно активирует его */
@@ -70,12 +71,12 @@
 }
 
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
   font-weight: 600;
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 20) + 20px);
 }
 
 @media screen and (max-width: 830px) {
@@ -100,13 +101,13 @@
 }
 
 .cursorIcon {
-  width: 7%;
+  width: 9%;
 }
 
 .serverIcon {
-  width: 7%;
+  width: 9%;
 }
 
 .designerIcon {
-  width: 7%;
+  width: 12%;
 }
