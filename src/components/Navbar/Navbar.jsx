@@ -10,7 +10,6 @@ export const Navbar = () => {
       <a className={styles.title} href="/">
         Portfolio
       </a>
-      {/* возврат на домашнюю страницу */}
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
@@ -36,7 +35,7 @@ export const Navbar = () => {
             <a href="#projects">Проекты</a>
           </li>
           <li>
-            <a href="#contacts">Контакты</a>
+            <a href="#contact">Контакты</a>
           </li>
         </ul>
       </div>

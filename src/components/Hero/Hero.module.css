@@ -27,7 +27,8 @@
 }
 
 .title {
-  font-size: 35px;
+  /* font-size: 35px; */
+  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
   font-weight: 900;
   /*  margin-bottom - добавление отступа внизу*/
   margin-bottom: 33px;
@@ -42,7 +43,8 @@
 }
 
 .description {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
   font-family: var(--font-robot);
   margin-bottom: 52px;
 }
@@ -61,7 +63,6 @@
 .heroImg {
   width: 50%;
   z-index: 1;
-
   /* animation-name - даем имя анимации */
   animation-name: floating;
   /* animation-duration - задаем продолжительность анимации*/
@@ -128,5 +129,12 @@
   .content {
     /* align-items: center - выровнять элементы по центру */
     align-items: center;
+  }
+  .title {
+    text-align: center;
+    margin-top: 29px;
+  }
+  .description {
+    text-align: center;
   }
 }
