@@ -31,7 +31,6 @@
   font-weight: 600;
   /*  margin-bottom - добавление отступа внизу*/
   margin-bottom: 33px;
-  font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
     rgba(155, 120, 131, 1) 70%,
@@ -39,6 +38,10 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-family: 'Bitter', serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .description {
@@ -54,7 +57,7 @@
   font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
   font-weight: 600;
   padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0, 0.25);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .heroImg {

@@ -8,8 +8,8 @@
 }
 
 .title {
-  font-size: 35px;
-  font-weight: 700;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
+  font-weight: 600;
   letter-spacing: 1.75px;
   text-transform: uppercase;
   color: var(--color-secondary);
@@ -23,7 +23,7 @@
   /* wrap — элементы переносятся на новую строку */
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 15px;
   width: 100%;
 }

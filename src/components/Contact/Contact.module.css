@@ -14,18 +14,9 @@
 .text h2 {
   /* color: var(--color-text); */
   font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
-  /* font-size: 80px; */
   font-weight: 700;
   letter-spacing: 2px;
 }
-
-.text p {
-  /* font-size: 40px; */
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
 .links {
   display: flex;
   flex-direction: column;
@@ -41,7 +32,7 @@
 }
 
 .link img {
-  width: 50px;
+  width: 5%;
 }
 
 .link a {
@@ -66,18 +57,13 @@
   }
 
   .links {
-    align-items: center;
     gap: 10px;
   }
 
   .link {
     gap: 11px;
   }
-  .text p {
-    margin-bottom: 22px;
-    align-items: center;
-  }
-  .link a {
-    text-align: center;
-  }
+  /* .link a {
+    text-align: right;
+  } */
 }

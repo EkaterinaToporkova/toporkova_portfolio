@@ -22,8 +22,8 @@
 }
 
 .title {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
+  font-weight: 600;
   color: var(--color-secondary);
 }
 

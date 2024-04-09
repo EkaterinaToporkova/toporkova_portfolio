@@ -17,12 +17,15 @@
 }
 
 .title {
-  color: var(--color-secondary);
+  color: var(--color-text);
   font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
   font-weight: 600;
   /* letter-spacing - интервал между буквами */
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .content {
