@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils";
+import styles from './Hero.module.css';
+import { getImageUrl } from '../../utils';
 
 //тут div - Весь текст левой части
 export const Hero = () => {
@@ -18,10 +18,13 @@ export const Hero = () => {
         </a>
         {/* Нажавший на эту ссылку попадет на свою почту и сможет отправить мне письмо*/}
       </div>
-      <img src={getImageUrl("hero/heroImage.png")} alt="hero image of me"  className={styles.heroImg} />
+      <img
+        src={getImageUrl('hero/heroImage.png')}
+        alt="hero image of me"
+        className={styles.heroImg}
+      />
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
   );
 };
-

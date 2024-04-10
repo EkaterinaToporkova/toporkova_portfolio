@@ -1,7 +1,7 @@
 @import '../../vars.css';
 
 .container {
-  /* Позиция (position) относительно изображения*/
+  /* position - Способ позиционирования элемента в документе*/
   position: relative;
   display: flex;
   /* выравнивнивание (align-items) объектов по центру*/
@@ -28,7 +28,8 @@
 
 .title {
   font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -2px;
   /*  margin-bottom - добавление отступа внизу*/
   margin-bottom: 33px;
   background: linear-gradient(
@@ -38,10 +39,6 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-family: 'Bitter', serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
 }
 
 .description {
@@ -85,7 +82,6 @@
     transform: translate(0, -0px);
   }
 }
-
 /* Блюр на верхней области страницы */
 .topBlur {
   position: absolute;

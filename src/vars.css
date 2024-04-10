@@ -4,7 +4,8 @@
   --color-primary: #d6b6b1; /* rgb(214, 182, 177) */
   --color-secondary: #9b7883; /*rgb(155, 120, 131) */
   --color-dark: #45565e; /* rgb(69, 86, 94) */
-  --color-bg: #eedcd3;
+  /* --color-bg: #eedcd3; */
+  --color-background: #2a2d3e;
 
   /* Fonst */
   --font-roboto: 'Roboto';
