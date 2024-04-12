@@ -13,6 +13,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  font-family: Ubuntu;
 }
 
 /* Стили содержимого */
@@ -22,37 +23,48 @@
   flex-direction: column;
   /* align-items: flex-start -  выравнивает гибкие элементы заподлицо с основной или перекрестной стороной гибкого контейнера.*/
   align-items: flex-start;
-  color: var(--color-dark);
+  color: var(--color-white);
   z-index: 1;
 }
 
 .title {
-  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 24) + 24px);
   font-weight: 700;
-  letter-spacing: -2px;
   /*  margin-bottom - добавление отступа внизу*/
   margin-bottom: 33px;
+  /* background: linear-gradient(
+    90deg,
+    rgba(198, 82, 109, 1) 70%,
+    rgba(198, 82, 109, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
+}
+
+.title span {
+  font-weight: 700;
   background: linear-gradient(
     90deg,
-    rgba(155, 120, 131, 1) 70%,
-    rgba(155, 120, 131, 0) 120%
+    rgba(198, 82, 109, 1) 70%,
+    rgba(198, 82, 109, 0) 120%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .description {
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 22) + 22px);
   margin-bottom: 52px;
+  font-weight: 400;
 }
 
 .contactBtn {
   text-decoration: none;
-  background-color: var(--color-secondary);
-  color: var(--color-bg);
+  background-color: var(--color-seven);
+  color: var(--color-white);
   border-radius: 100px;
-  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
-  font-weight: 600;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 22) + 22px);
+  font-weight: 400;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -84,38 +96,40 @@
 }
 
 /* Блюр на верхней области страницы */
-/* .topBlur {
-  /* position: absolute; */
-/* width: 50vw; */
-/* height: 50vw; */
-/* min-width: 350px;
-  min-height: 350px; */
-/* top: -128px - выход за пределы экрана */
-/* top: -128px;
-  left: -10vw; */
-/* border  - радиус границы*/
-/* border-radius: 764px;
-  background: rgba(255, 255, 255, 0.7); */
-/* filter: blur - фильтр, который размывает */
-/* filter: blur(100px);
-  z-index: 0; }*/
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-height: 350px;
+  /* top: -128px - выход за пределы экрана */
+  top: -128px;
+  left: -10vw;
+  /* border  - радиус границы*/
+  border-radius: 764px;
+  background: rgba(151, 127, 170, 0.5);
+  /* filter: blur - фильтр, который размывает */
+  filter: blur(100px);
+  z-index: 0;
+}
 
 /* Блюр на нижней области страницы */
-/* .bottomBlur {
+.bottomBlur {
   position: absolute;
   width: 70vw;
   height: 50vw;
   min-width: 350px;
   min-height: 250px;
   /* top: -128px - выход за пределы экрана */
-/* top: 246px; */
-/* right: -25vw; */
-/* border  - радиус границы*/
-/* border-radius: 764px;
-  background: rgba(255, 255, 255, 0.7); */
-/* filter: blur - фильтр, который размывает */
-/* filter: blur(100px);
-  z-index: 0; } */
+  top: 246px;
+  right: -25vw;
+  /* border  - радиус границы */
+  border-radius: 764px;
+  background: rgba(151, 127, 170, 0.5);
+  /* filter: blur - фильтр, который размывает */
+  filter: blur(100px);
+  z-index: 0;
+}
 
 @media screen and (max-width: 830px) {
   .container {

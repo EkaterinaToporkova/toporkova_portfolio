@@ -8,7 +8,9 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Привет! Меня зовут Катя Топоркова</h1>
+        <h1 className={styles.title}>
+          Привет! Меня зовут <span>Катя Топоркова</span>
+        </h1>
         <p className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
