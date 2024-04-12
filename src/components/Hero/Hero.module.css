@@ -30,26 +30,12 @@
 .title {
   font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 24) + 24px);
   font-weight: 700;
-  /*  margin-bottom - добавление отступа внизу*/
   margin-bottom: 33px;
-  /* background: linear-gradient(
-    90deg,
-    rgba(198, 82, 109, 1) 70%,
-    rgba(198, 82, 109, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; */
 }
 
 .title span {
   font-weight: 700;
-  background: linear-gradient(
-    90deg,
-    rgba(198, 82, 109, 1) 70%,
-    rgba(198, 82, 109, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: var(--color-seven);
 }
 
 .description {
