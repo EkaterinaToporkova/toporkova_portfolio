@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-.line {
+.menu {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -27,18 +27,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
   line-height: 32px;
   color: rgb(255 255 255 / 50%);
   list-style: none;
 }
-/* 
-.menuItems {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  justify-content: space-between;
-} */
 
 .menuItems a {
   text-decoration: none;
@@ -48,6 +40,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menuItems a img {
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {

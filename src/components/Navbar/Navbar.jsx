@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className={styles.navbar}>
-      <div className={styles.line}>
+      <div className={styles.menu}>
         <ul className={styles.menuItems}>
           <li>
             <a href="#">
