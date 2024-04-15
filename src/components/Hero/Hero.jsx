@@ -1,10 +1,25 @@
-import React from 'react';
-
+import React, { useEffect, useRef } from 'react';
+import Vivus from 'vivus';
 import styles from './Hero.module.css';
 import { getImageUrl } from '../../utils';
 
 //тут div - Весь текст левой части
 export const Hero = () => {
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    if (svgRef.current) {
+      const vivusInstance = new Vivus(svgRef.current, {
+        type: 'scenario',
+        duration: 160,
+      });
+
+      return () => {
+        vivusInstance.destroy();
+      };
+    }
+  }, [svgRef.current]);
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -20,11 +35,18 @@ export const Hero = () => {
         </a>
         {/* Нажавший на эту ссылку попадет на свою почту и сможет отправить мне письмо*/}
       </div>
-      <img
+      <object
+        ref={svgRef}
+        type="image/svg+xml"
+        data={getImageUrl('hero/gears.svg')}
+        className={styles.heroImg}
+      ></object>
+
+      {/* <img
         src={getImageUrl('hero/heroImage.png')}
         alt="hero image of me"
         className={styles.heroImg}
-      />
+      /> */}
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
