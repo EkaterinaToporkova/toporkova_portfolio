@@ -50,4 +50,8 @@
   .navbar {
     bottom: 5vh;
   }
+  .menu {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
