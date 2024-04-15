@@ -6,14 +6,12 @@ import { getImageUrl } from '../../utils';
 //тут div - Весь текст левой части
 export const Hero = () => {
   const svgRef = useRef(null);
-
   useEffect(() => {
     if (svgRef.current) {
       const vivusInstance = new Vivus(svgRef.current, {
         type: 'scenario',
-        duration: 160,
+        duration: 200,
       });
-
       return () => {
         vivusInstance.destroy();
       };
