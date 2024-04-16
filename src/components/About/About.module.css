@@ -3,11 +3,12 @@
 .container {
   /* position: relative - относительное позиционирование сдвигает элемент относительно его обычного положения. */
   position: relative;
-  background-color: rgba(155, 120, 131, 0.6);
+  background-color: rgba(166, 169, 184, 0.2);
+  color: var(--color-white);
   /* border-radius: 15px - радиус скругления границы 15px*/
   border-radius: 15px;
   /* padding: 73px - создания пространства вокруг содержимого элемента внутри любых определенных границ, со всех сторон 73px */
-  padding: 73px;
+  padding: 10px;
   /* margin-top - устанавливает величину отступа от верхнего края элемента. Отступом является расстояние от внешнего края верхней границы текущего элемента до внутренней границы его родительского элемента  */
   margin-top: 49px;
   /* z-index - определяет порядок наложения элементов в трёхмерном пространстве на веб-странице. */
@@ -17,14 +18,13 @@
 }
 
 .title {
-  color: var(--color-text);
-  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
-  font-weight: 600;
+  color: var(--color-white);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
+  font-weight: normal;
   /* letter-spacing - интервал между буквами */
-  letter-spacing: 1.75px;
+  /* letter-spacing: 1.75px; */
   text-transform: uppercase;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
 }
 
@@ -37,14 +37,13 @@
 }
 
 .aboutImage {
-  width: 35%;
+  width: 40%;
 }
 
 .aboutItems {
-  color: var(--color-dark);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 15px;
 }
 
 .aboutItem {
@@ -56,12 +55,11 @@
   padding: 25px;
   background-image: linear-gradient(
     90deg,
-    rgba(214, 182, 177, 0.42) 0%,
+    rgba(151, 127, 170, 0.42) 0%,
     rgba(255, 255, 255, 0) 100%
   );
   /* background-size - управляет размерами картинки внутри элемента, для которого эта картинка задана фоном.*/
   background-size: 0 100%;
-  gap: 11px;
 }
 
 /* :hover - псевдоэлемент, который срабатывает, когда пользователь наводит на элемент мышью, но не обязательно активирует его */
@@ -74,15 +72,16 @@
 }
 
 .aboutItem h3 {
+  color: var(--color-four);
   font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .aboutItem p {
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 20) + 20px);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 20) + 20px);
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1200px) {
   .container {
     background-color: transparent;
     padding-left: 0;
@@ -101,16 +100,4 @@
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-.cursorIcon {
-  width: 9%;
-}
-
-.serverIcon {
-  width: 9%;
-}
-
-.designerIcon {
-  width: 12%;
 }

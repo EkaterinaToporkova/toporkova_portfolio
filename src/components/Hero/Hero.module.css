@@ -10,7 +10,7 @@
   justify-content: space-between;
   /* Пространство между текстом и полем изображения 49px */
   margin-top: 49px;
-  z-index: 1;
+  z-index: 2;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -27,20 +27,19 @@
 }
 
 .title {
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 24) + 24px);
-  font-weight: 500;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 20) + 20px);
+  font-weight: normal;
   margin-bottom: 33px;
 }
 
 .title span {
-  font-weight: 500;
   color: var(--color-three);
 }
 
 .description {
-  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 22) + 22px);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 18) + 18px);
   margin-bottom: 52px;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .contactBtn {
@@ -48,7 +47,7 @@
   background-color: var(--color-seven);
   color: var(--color-white);
   border-radius: 100px;
-  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 22) + 22px);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 20) + 20px);
   font-weight: 400;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -58,13 +57,13 @@
   width: 50%;
   z-index: 3;
   /* animation-name - даем имя анимации */
-  /* animation-name: floating; */
+  animation-name: floating;
   /* animation-duration - задаем продолжительность анимации*/
-  /* animation-duration: 3s; */
+  animation-duration: 3s;
   /* animation-iteration-count - задаем, сколько раз должна запускаться анимация */
-  /* animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
   /* animation-timing-function - задаем, как выглядит движение анимации*/
-  /* animation-timing-function: ease-in-out; */
+  /* /* animation-timing-function: ease-in-out; */
 }
 
 /* @keyframes - поможет двигаться анимации */
@@ -116,8 +115,9 @@
   z-index: 0;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 840px) {
   .container {
+    /* filter: brightness(200%); */
     flex-direction: column-reverse;
   }
   .content {
@@ -130,5 +130,8 @@
   }
   .description {
     text-align: center;
+  }
+  .heroImg {
+    width: 70%;
   }
 }

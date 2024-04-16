@@ -37,7 +37,7 @@ export const About = () => {
             />
             <div className={styles.aboutItemText}>
               <h3>Backend Developer Designer</h3>
-              <p>Есть опыт работы разработки на Django 4.2</p>
+              <p>Есть опыт разработки на Django 4.2</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
@@ -48,7 +48,7 @@ export const About = () => {
             />
             <div className={styles.aboutItemText}>
               <h3>Designer</h3>
-              <p>Разработала макеты пользовательских интерфейсов в Figma</p>
+              <p>Разработывала макеты пользовательских интерфейсов в Figma</p>
             </div>
           </li>
         </ul>
