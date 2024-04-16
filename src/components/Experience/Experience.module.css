@@ -8,10 +8,9 @@
 }
 
 .title {
-  color: var(--color-secondary);
-  font-size: calc((100vw - 480px) / (1280 - 480) * (35 - 24) + 24px);
-  font-weight: 600;
-  letter-spacing: 1.75px;
+  color: var(--color-white);
+  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
+  font-weight: normal;
   text-transform: uppercase;
 }
 

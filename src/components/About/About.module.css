@@ -24,8 +24,7 @@
   /* letter-spacing - интервал между буквами */
   /* letter-spacing: 1.75px; */
   text-transform: uppercase;
-  font-optical-sizing: auto;
-  font-style: normal;
+  /* font-optical-sizing: auto; */
 }
 
 .content {
@@ -70,14 +69,18 @@
   /* свойство transition служит для создания плавных переходов между двумя состояниями элемента */
   transition: 0.4s;
 }
-
-.aboutItem h3 {
+.aboutItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.aboutItemText h3 {
   color: var(--color-four);
   font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
-  font-weight: 300;
+  font-weight: normal;
 }
 
-.aboutItem p {
+.aboutItemText p {
   font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 20) + 20px);
 }
 
