@@ -1,16 +1,15 @@
 @import '../../vars.css';
 
 .container {
-  color: var(--color-dark);
+  color: var(--color-white);
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  color: var(--color-white);
   font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
-  font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -55,10 +54,9 @@
 }
 
 .skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  /* font-weight указывает толщину букв */
-  font-weight: 500;
+  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 20) + 20px);
+  color: var(--color-seven);
+  font-weight: normal;
 }
 
 .history {

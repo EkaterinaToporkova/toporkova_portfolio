@@ -48,7 +48,7 @@ export const About = () => {
             />
             <div className={styles.aboutItemText}>
               <h3>Designer</h3>
-              <p>Разработывала макеты пользовательских интерфейсов в Figma</p>
+              <p>Разрабатывала макеты пользовательских интерфейсов в Figma</p>
             </div>
           </li>
         </ul>
