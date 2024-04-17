@@ -19,7 +19,7 @@
 
 .title {
   color: var(--color-white);
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 20) + 20px);
+  font-size: clamp(25px, 2.5vw, 35px);
   font-weight: bold;
   /* letter-spacing - интервал между буквами */
   /* letter-spacing: 1.75px; */
@@ -36,7 +36,8 @@
 }
 
 .aboutImage {
-  width: 40%;
+  width: 45vw;
+  height: 45vh;
 }
 
 .aboutItems {
@@ -73,16 +74,16 @@
 .aboutItemText {
   display: flex;
   flex-direction: column;
-  gap: 11px;
 }
 .aboutItemText h3 {
   color: var(--color-four);
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
+  font-size: clamp(20px, 2.5vw, 30px);
   font-weight: bold;
 }
 
 .aboutItemText p {
-  font-size: calc((100vw - 480px) / (1280 - 480) * (28 - 20) + 20px);
+  font-size: clamp(20px, 2.5vw, 30px);
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1200px) {
