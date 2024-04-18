@@ -25,6 +25,7 @@
   width: 46%;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   /* flex-wrap определяет, будут ли flex-элементы переноситься на другую строку. wrap - будут */
   flex-wrap: wrap;
   /* gap - устанавливает разрыв между строками и колонками */
@@ -81,19 +82,19 @@
 }
 
 .historyItemDetails h3 {
-  font-size: clamp(23px, 8vw, 32px);
+  font-size: clamp(23px, 2.5vw, 30px);
   font-weight: bold;
 }
 
 .historyItemDetails p {
-  font-size: clamp(1rem, 1vw, 2rem);
-  font-weight: 300;
+  font-size: clamp(13px, 2.5vw, 20px);
+  font-weight: normal;
 }
 
 .historyItemDetails ul {
   margin-top: 6px;
   list-style-position: inside;
-  font-size: 25px;
+  font-size: clamp(18px, 2.5vw, 25px);
   list-style-type: disc;
   margin-left: 17px;
 }

@@ -20,10 +20,6 @@
     "imageSrc": "skills/django.png"
   },
   {
-    "title": "PostgreSQL",
-    "imageSrc": "skills/postgresql.png"
-  },
-  {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
   }

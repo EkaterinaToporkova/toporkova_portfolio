@@ -21,7 +21,7 @@ export const About = () => {
               alt="Cursor icon"
               className={styles.cursorIcon}
             />
-            <div className={styles.aboutItemText}>
+            <div>
               <h3>Frontend Developer</h3>
               <p>
                 Я фронтенд разработчик с опытом создания адаптивных и
@@ -35,7 +35,7 @@ export const About = () => {
               alt="Server icon"
               className={styles.serverIcon}
             />
-            <div className={styles.aboutItemText}>
+            <div>
               <h3>Backend Developer Designer</h3>
               <p>Есть опыт разработки на Django 4.2</p>
             </div>
@@ -46,7 +46,7 @@ export const About = () => {
               alt="Designer icon"
               className={styles.designerIcon}
             />
-            <div className={styles.aboutItemText}>
+            <div>
               <h3>Designer</h3>
               <p>Разрабатывала макеты пользовательских интерфейсов в Figma</p>
             </div>
