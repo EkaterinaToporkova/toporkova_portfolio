@@ -82,6 +82,7 @@
 }
 
 .historyItemDetails h3 {
+  color: var(--color-three);
   font-size: clamp(23px, 2.5vw, 30px);
   font-weight: bold;
 }

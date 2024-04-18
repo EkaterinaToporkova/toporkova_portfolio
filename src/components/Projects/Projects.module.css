@@ -9,8 +9,8 @@
 
 .title {
   color: var(--color-white);
-  font-size: calc((100vw - 480px) / (1280 - 480) * (30 - 22) + 22px);
-  font-weight: normal;
+  font-size: clamp(25px, 2.5vw, 35px);
+  font-weight: bold;
   text-transform: uppercase;
 }
 
