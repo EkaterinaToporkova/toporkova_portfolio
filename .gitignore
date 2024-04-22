@@ -25,4 +25,4 @@ dist-ssr
 
 font-size
 контакт
-key.env
+*.env

@@ -9,14 +9,15 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(import.meta.env.VITE_SERVICE_ID);
+    console.log(import.meta.env.VITE_PUBLIC_KEY);
     emailjs
       .sendForm(
-        import.meta.env.REACT_APP_SERVICE_ID,
-        import.meta.env.REACT_APP_TEMPLATE_ID,
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
         {
-          publicKey: import.meta.env.REACT_APP_PUBLIC_KEY,
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
         }
       )
       .then(
