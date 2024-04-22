@@ -2,7 +2,7 @@ import styles from './Contact.module.css';
 import { getImageUrl } from '../../utils';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../../../key.env';
+// import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../../../key.env';
 
 export const Contact = () => {
   const form = useRef();
@@ -11,9 +11,14 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
-        publicKey: PUBLIC_KEY,
-      })
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log('SUCCESS!');
