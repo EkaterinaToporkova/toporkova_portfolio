@@ -2,7 +2,7 @@ import styles from './Contact.module.css';
 import { getImageUrl } from '../../utils';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../../../key';
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../../../key.env';
 
 export const Contact = () => {
   const form = useRef();
