@@ -30,26 +30,22 @@ export const Contact = () => {
   };
   return (
     <footer className={styles.container} id="contact">
-      <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
-        <input
-          type="text"
-          name="user_name"
-          placeholder="Имя"
-          className={styles.text}
-        />
-        <input
-          type="email"
-          name="user_email"
-          placeholder="E-mail"
-          className={styles.email}
-        />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Напишите свое сообщение"
-          className={styles.textarea}
-        />
-        <input type="submit" value="Отправить" className={styles.submitBtn} />
+      <form ref={form} onSubmit={sendEmail} className={styles.form}>
+        <h1>Свяжитесь со мной</h1>
+        <div className={styles.data_block}>
+          <input type="text" name="user_name" placeholder="Имя" />
+          <input type="email" name="user_email" placeholder="E-mail" />
+        </div>
+        <div className={styles.text_area}>
+          <textarea
+            name="message"
+            rows="10"
+            placeholder="Напишите свое сообщение"
+          />
+        </div>
+        <div className={styles.send}>
+          <button type="submit">Отправить</button>
+        </div>
       </form>
     </footer>
   );
