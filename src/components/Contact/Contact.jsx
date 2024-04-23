@@ -9,6 +9,8 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(import.meta.env.VITE_SERVICE_ID);
+
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
