@@ -30,38 +30,26 @@ export const Contact = () => {
   };
   return (
     <footer className={styles.container} id="contact">
-      <div className={styles.conact}>
-        <div className={styles.text}>
-          <h2>Контакты</h2>
-        </div>
-        <ul className={styles.links}>
-          <li className={styles.link}>
-            <img src={getImageUrl('contact/emailIcon.png')} alt="Email icon" />
-            <a href="mailto:myemail@mail.ru">myemail@mail.ru</a>
-          </li>
-          <li className={styles.link}>
-            <img
-              src={getImageUrl('contact/headhunterIcon.png')}
-              alt="headhunter icon"
-            />
-            <a href="#">headhunter.com/EkaterinaToporkova</a>
-          </li>
-          <li className={styles.link}>
-            <img src={getImageUrl('contact/github.png')} alt="GitHub icon" />
-            <a href="https://github.com/EkaterinaToporkova">
-              github.com/EkaterinaToporkova
-            </a>
-          </li>
-        </ul>
-      </div>
       <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
-        <label>Имя</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Сообщение</label>
-        <textarea name="message" />
-        <input type="submit" value="Сязаться" />
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Имя"
+          className={styles.text}
+        />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="E-mail"
+          className={styles.email}
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Напишите свое сообщение"
+          className={styles.textarea}
+        />
+        <input type="submit" value="Отправить" className={styles.submitBtn} />
       </form>
     </footer>
   );
