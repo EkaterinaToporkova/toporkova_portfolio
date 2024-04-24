@@ -30,6 +30,13 @@ export const Contact = () => {
   };
   return (
     <footer className={styles.container} id="contact">
+      <div className={styles.contact}>
+        <img
+          src={getImageUrl('contact/contactImage.png')}
+          alt="Me setting with a laptop"
+          className={styles.contactImage}
+        />
+      </div>
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <h1>Свяжитесь со мной</h1>
         <div className={styles.data_block}>

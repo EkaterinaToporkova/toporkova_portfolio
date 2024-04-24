@@ -6,8 +6,8 @@
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
+  gap: 40px;
   width: 100vw;
   padding-left: 10%;
   padding-right: 10%;
@@ -15,9 +15,22 @@
   padding-bottom: 110px;
 }
 
+.contact {
+  width: 50%;
+}
+
+.contactImage {
+  margin-top: 70px;
+  height: auto;
+  width: 100%;
+  /* еще больше контроля с max-width */
+  max-width: 720px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
   gap: 20px;
   width: 50%;
   padding: 80px 60px 100px;
@@ -79,7 +92,9 @@ textarea::placeholder {
 
 button {
   width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px 50px;
   font-size: clamp(16px, 2.5vw, 24px);
   font-weight: normal;
@@ -97,5 +112,8 @@ button:active {
   transform: translateY(2px);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 840px) {
+  .form {
+    display: none;
+  }
 }
