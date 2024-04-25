@@ -25,6 +25,7 @@
 }
 
 .contact {
+  width: 30vw;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -47,6 +48,8 @@
 }
 
 .form {
+  width: 30vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -145,15 +148,15 @@ button:active {
     align-items: center;
     justify-content: center;
   }
-
+  /* 
   .contactImage {
     height: auto;
     width: 50%;
-  }
+  } */
 
   .form {
     margin-top: 39px;
-    width: 100%;
+    /* width: 100%; */
     padding: 40px 30px 50px;
     gap: 14px;
   }
