@@ -35,7 +35,6 @@
 .aboutImage {
   height: auto;
   width: 40%;
-  /* еще больше контроля с max-width */
   max-width: 720px;
 }
 

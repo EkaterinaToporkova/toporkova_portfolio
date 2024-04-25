@@ -50,6 +50,7 @@
 
 @media screen and (max-width: 1200px) {
   .container {
+    padding-top: 30px;
     flex-direction: column;
     justify-content: center;
     gap: 23px;
