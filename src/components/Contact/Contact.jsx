@@ -30,44 +30,50 @@ export const Contact = () => {
   };
   return (
     <footer className={styles.container} id="contact">
-      <div className={styles.contact}>
-        <img
-          src={getImageUrl('contact/contactImage.png')}
-          alt="Me setting with a laptop"
-          className={styles.contactImage}
-        />
-        <div className={styles.imgLink}>
-          <a href="mailto:myemail@mail.ru">
-            <img src={getImageUrl('contact/emailIcon.png')} alt="Email icon" />
-          </a>
-          <a href="#">
-            <img
-              src={getImageUrl('contact/headhunterIcon.png')}
-              alt="headhunter icon"
-            />
-          </a>
-          <a href="https://github.com/EkaterinaToporkova">
-            <img src={getImageUrl('contact/github.png')} alt="GitHub icon" />
-          </a>
-        </div>
-      </div>
-      <form ref={form} onSubmit={sendEmail} className={styles.form}>
-        <h1>Свяжитесь со мной</h1>
-        <div className={styles.data_block}>
-          <input type="text" name="user_name" placeholder="Имя" />
-          <input type="email" name="user_email" placeholder="E-mail" />
-        </div>
-        <div className={styles.text_area}>
-          <textarea
-            name="message"
-            rows="10"
-            placeholder="Напишите свое сообщение"
+      <h2 className={styles.title}>Контакты</h2>
+      <div className={styles.content}>
+        <div className={styles.contact}>
+          <img
+            src={getImageUrl('contact/contactImage.png')}
+            alt="Me setting with a laptop"
+            className={styles.contactImage}
           />
+          <div className={styles.imgLink}>
+            <a href="mailto:myemail@mail.ru">
+              <img
+                src={getImageUrl('contact/emailIcon.png')}
+                alt="Email icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src={getImageUrl('contact/headhunterIcon.png')}
+                alt="headhunter icon"
+              />
+            </a>
+            <a href="https://github.com/EkaterinaToporkova">
+              <img src={getImageUrl('contact/github.png')} alt="GitHub icon" />
+            </a>
+          </div>
         </div>
-        <div className={styles.send}>
-          <button type="submit">Отправить</button>
-        </div>
-      </form>
+        <form ref={form} onSubmit={sendEmail} className={styles.form}>
+          <h1>Свяжитесь со мной</h1>
+          <div className={styles.data_block}>
+            <input type="text" name="user_name" placeholder="Имя" />
+            <input type="email" name="user_email" placeholder="E-mail" />
+          </div>
+          <div className={styles.text_area}>
+            <textarea
+              name="message"
+              rows="10"
+              placeholder="Напишите свое сообщение"
+            />
+          </div>
+          <div className={styles.send}>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
     </footer>
   );
 };
