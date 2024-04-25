@@ -156,7 +156,7 @@ button:active {
 
   .form {
     margin-top: 39px;
-    /* width: 100%; */
+    width: 100%;
     padding: 40px 30px 50px;
     gap: 14px;
   }
