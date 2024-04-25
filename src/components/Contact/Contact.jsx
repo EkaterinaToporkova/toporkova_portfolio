@@ -36,6 +36,20 @@ export const Contact = () => {
           alt="Me setting with a laptop"
           className={styles.contactImage}
         />
+        <div className={styles.imgLink}>
+          <a href="mailto:myemail@mail.ru">
+            <img src={getImageUrl('contact/emailIcon.png')} alt="Email icon" />
+          </a>
+          <a href="#">
+            <img
+              src={getImageUrl('contact/headhunterIcon.png')}
+              alt="headhunter icon"
+            />
+          </a>
+          <a href="https://github.com/EkaterinaToporkova">
+            <img src={getImageUrl('contact/github.png')} alt="GitHub icon" />
+          </a>
+        </div>
       </div>
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <h1>Свяжитесь со мной</h1>
