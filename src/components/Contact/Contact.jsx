@@ -29,7 +29,7 @@ export const Contact = () => {
       );
   };
   return (
-    <footer className={styles.container} id="contact">
+    <div className={styles.container} id="contact">
       <h2 className={styles.title}>Контакты</h2>
       <div className={styles.content}>
         <div className={styles.contact}>
@@ -74,6 +74,6 @@ export const Contact = () => {
           </div>
         </form>
       </div>
-    </footer>
+    </div>
   );
 };
