@@ -1,3 +1,17 @@
+<h1 align="center">
+  <a href="https://main--katyatopor.netlify.app/">Сайт-портфолио</a>
+</h1>
+
+![image](https://github.com/EkaterinaToporkova/toporkova_portfolio/assets/90981180/64ccc1db-43ca-4140-a6bc-2018fad96879)
+
+  
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
